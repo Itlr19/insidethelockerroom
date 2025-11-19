@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrenamiento de Alto Rendimiento</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #e5e5e5 10%, #4361ee 50%, #3a0ca3 100%);
+      color: #2c3e50;
+    }
+
+    .back-arrow {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 32px;
+      color: white;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 8px 12px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+    }
+
+    .back-arrow:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .header-wrapper {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      filter: brightness(0.95);
+    }
+
+    .header-wrapper::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background: linear-gradient(to top, rgba(255,255,255,0.9), transparent);
+      pointer-events: none;
+    }
+
+    .article-container {
+      max-width: 960px;
+      margin: auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      position: relative;
+      top: -250px;
+      z-index: 2;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      color: #1a1a1a;
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: #ff4d6d;
+      font-size: 26px;
+      margin-bottom: 15px;
+      border-left: 5px solid #ff4d6d;
+      padding-left: 10px;
+    }
+
+    .section p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 720px;
+      height: 420px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+    video {
+  width: 100%;
+  max-width: 720px;
+  height: 420px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+    .image-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.02);
+    }
+        .comment-section {
+  max-width: 800px;
+  margin: 60px auto 40px;
+  padding: 30px;
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.comment-section h2 {
+  font-size: 26px;
+  color: #ff3333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.comment-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.comment-form button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #cc0000;
+}
+  </style>
+</head>
+<body>
+
+  <a href="Articulos.html" class="back-arrow" title="Volver">&#8592;</a>
+
+  <div class="header-wrapper">
+    <img src="lamelo 2.jpg" alt="Imagen destacada" class="header-image">
+  </div>
+
+  <div class="article-container">
+    <h1>Entrenamiento de Alto Rendimiento</h1>
+
+    <div class="section">
+      <h2>¿Quién es LaMelo Ball?</h2>
+      <p>LaMelo Ball fue seleccionado por los Charlotte Hornets como la tercera elección del Draft 2020 de la NBA. Desde su llegada, se destacó por su visión de juego, manejo del balón y estilo creativo. En su temporada de novato ganó el Rookie del Año 2021. Ha sido elegido al All-Star Game y se consolidó como el líder del equipo. A pesar de mostrar gran talento, su carrera ha estado afectada por varias lesiones. Su combinación de anotación y asistencias lo convierte en uno de los bases jóvenes más prometedores de la liga.</p>
+    </div>
+
+    <div class="section">
+      <h2>Estilo de juego</h2>
+      <p>Cuando LaMelo Ball está sano, se transforma en uno de los jugadores más influyentes y emocionantes de toda la NBA. Su estilo combina creatividad, control y fluidez, cualidades que pocos bases logran dominar al mismo tiempo. Lo más impresionante es su inteligencia en la pista: LaMelo no solo juega rápido, sino que piensa más rápido que todos. Su lectura del juego es de nivel élite; anticipa los movimientos de sus compañeros y detecta huecos en la defensa antes de que se abran.
+      Además, tiene una facilidad natural para anotar, ya sea atacando el aro con su cambio de ritmo o lanzando desde el perímetro con confianza. Su tamaño le permite ver sobre las defensas y encontrar pases imposibles. Más allá de las estadísticas, su verdadero impacto está en cómo controla el ritmo del partido, marcando cuándo acelerar o frenar. Con él en cancha, los Hornets juegan con identidad y energía. Su liderazgo, visión y talento lo colocan sin duda entre los mejores bases jóvenes y Top 5 cuando está sano.</p>
+    </div>
+
+   <div class="video-container">
+  <video controls>
+    <source src="LaMelo Ball COULD NOT BE STOPPED vs Wizards  October 26, 2025 - NBA (1080p, h264).mp4" type="video/mp4">
+   
+  </video>
+</div>
+
+    <div class="section">
+      <h2>¿Top 5 Point Guard en la liga?</h2>
+      <p>El talento de LaMelo es innegable. Compararlo con los mejores point guards de la liga suena descabellado, pero en papel, este jugador tiene argumentos sólidos para entrar a esa conversación.</p>
+
+      <h2>Primer Argumento</h2>
+      <p>Aunque no lo parezca, los números de LaMelo Ball han mejorado significativamente temporada tras temporada, llegando al punto de que en la regular season 24-25 puso números y porcentajes a la altura de los mejores point guards en la liga, además de hacer lucir a los Hornets bastante bien durante los primeros meses antes de su lesión.</p>
+
+      <div class="image-container">
+        <img src="stats lamelo.jpg" alt="Estadísticas de LaMelo Ball">
+      </div>
+
+      <h2>Segundo Argumento</h2>
+      <p>Muchas personas argumentan que LaMelo Ball no juega un baloncesto ganador, sus innecesarios pases y arriesgada selección de tiro nunca llevarán a playoffs a Charlotte. Esto es algo que he tenido que escuchar varias veces al hablar sobre este jugador. Sin embargo, esta afirmación no es del todo correcta. Es cierto que LaMelo no ha podido llevar a los Hornets a playoffs, pero mayormente esto se debe a sus múltiples lesiones en etapas fundamentales de las temporadas. Estadísticamente, no solo sube exponencialmente el offensive rating de Charlotte mientras él está en la pista, sino que también tienen más derrotas sin LaMelo que con él, de esta forma probando su valía para el equipo.</p>
+
+      <div class="image-container">
+        <img src="charlotte w lamelo.png" alt="Charlotte con LaMelo">
+        <img src="charlotte w o lamelo.png" alt="Charlotte sin LaMelo">
+      </div>
+    </div>
+
+   <div class="comment-section">
+  <h2>Comentarios</h2>
+  <form class="comment-form" id="commentForm">
+    <input type="text" id="name" placeholder="Tu nombre" required>
+    <textarea id="message" placeholder="Escribe tu comentario aquí..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <div class="comment-list" id="commentList"></div>
+</div>
+
+<style>
+.comment-list {
+  margin-top: 30px;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.comment {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+.comment strong {
+  color: #ff3333;
+}
+
+.comment p {
+  margin: 5px 0 0;
+  color: #ddd;
+}
+</style>
+
+<script>
+const form = document.getElementById('commentForm');
+const commentList = document.getElementById('commentList');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (name && message) {
+    const comment = document.createElement('div');
+    comment.classList.add('comment');
+    comment.innerHTML = `<strong>${name}</strong><p>${message}</p>`;
+    commentList.prepend(comment);
+    form.reset();
+  }
+});
+</script>
+
+</body>
+</html>

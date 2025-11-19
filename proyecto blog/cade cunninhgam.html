@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrenamiento de Alto Rendimiento</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #ffffff 10%, #173ad7 50%, #02115c 100%);
+      color: #2c3e50;
+    }
+
+    .back-arrow {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 32px;
+      color: white;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 8px 12px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+    }
+
+    .back-arrow:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .header-wrapper {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      filter: brightness(0.95);
+    }
+
+    .header-wrapper::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background: linear-gradient(to top, rgba(255,255,255,0.95), transparent);
+      pointer-events: none;
+    }
+
+    .article-container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      color: #1a1a1a;
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: #ff4d6d;
+      font-size: 26px;
+      margin-bottom: 15px;
+      border-left: 5px solid #ff4d6d;
+      padding-left: 10px;
+    }
+
+    .section p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 720px;
+      height: 420px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.02);
+    }
+        .comment-section {
+  max-width: 800px;
+  margin: 60px auto 40px;
+  padding: 30px;
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.comment-section h2 {
+  font-size: 26px;
+  color: #ff3333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.comment-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.comment-form button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #cc0000;
+}
+  </style>
+</head>
+<body>
+
+  <a href="Articulos.html" class="back-arrow" title="Volver">&#8592;</a>
+
+  <div class="header-wrapper">
+    <img src="cade pos.jpg" alt="Imagen destacada" class="header-image">
+  </div>
+
+  <div class="article-container">
+    <h1>Conociendo Estrellas</h1>
+
+    <div class="section">
+      <h2>¿Quién es Cade Cunningham?</h2>
+      <p>Cade Cunningham es el base titular de los Detroit Pistons.
+Destaca por su inteligencia en la cancha y su capacidad para controlar el ritmo del juego.
+Fue seleccionado como el pick número uno en el Draft de la NBA 2021.
+Desde su llegada, se ha convertido en el líder indiscutible del proyecto de reconstrucción en Detroit.
+Su versatilidad le permite anotar, asistir y defender con eficacia.
+Es considerado una de las promesas más sólidas entre los jóvenes talentos de la liga.
+</p>
+    </div>
+
+    <div class="section">
+      <h2>Estilo de juego</h2>
+      <p>Cade Cunningham es el base titular de los Detroit Pistons y uno de los talentos jóvenes más completos de la NBA.
+Fue seleccionado como la primera elección del Draft 2021 tras brillar en Oklahoma State.
+Desde su llegada, ha asumido el rol de líder en la reconstrucción del equipo.
+Su estilo de juego es pausado, inteligente y orientado al control del ritmo.
+Destaca por su visión de juego, capacidad para asistir y tomar decisiones precisas.
+Con 1.98 m de estatura, puede defender múltiples posiciones y ver sobre las defensas.
+Es un anotador versátil: ataca el aro, lanza desde media distancia y clava triples.
+Su liderazgo es silencioso pero efectivo; mejora el rendimiento de quienes lo rodean.
+En la temporada 2025–26 promedia más de 27 puntos y 9 asistencias por partido.
+Cunningham representa el nuevo prototipo de base cerebral, físico y dominante.
+
+</p>
+    </div>
+
+    <div class="video-container">
+      <iframe src="Cade Cunningham Being A Top 10 NBA Player For 16 Minutes Straight! - Golden Hoops (1080p, h264).mp4" allowfullscreen></iframe>
+    </div>
+
+    <div class="section">
+      <h2>Temporada de los Pistons 2023-2024</h2>
+      <p>Los Detroit Pistons terminaron la temporada 2023-2024 con un récord desastroso de 14-68, el peor de la NBA. Sufrieron una racha histórica de 28 derrotas consecutivas, la más larga en una sola campaña. Bajo la dirección de Monty Williams, en su primer año como entrenador, el equipo no logró consolidarse a pesar del talento joven como Cade Cunningham, Jaden Ivey y Ausar Thompson. Las lesiones, la falta de cohesión y una defensa débil marcaron su desempeño. Fueron últimos en la Conferencia Este y en la División Central, sin opciones de playoffs. El Little Caesars Arena fue testigo de una temporada frustrante, aunque con destellos individuales prometedores. Se espera una reestructuración profunda y una selección alta en el Draft 2024 para cambiar el rumbo.</p>
+
+      <h2>2023-2024 Cade Cunningham</h2>
+      <p>A pesar del desastroso récord colectivo de los Pistons, Cade tuvo su mejor campaña individual hasta la fecha. En 62 partidos, promedió 22.7 puntos, 7.5 asistencias y 4.3 rebotes por juego, con un 44.9% en tiros de campo y 35.5% en triples. Fue su primera temporada completa tras las lesiones del año anterior, y demostró que puede ser el motor ofensivo de un equipo NBA.
+ Esta temporada no solo reafirmó su potencial All-Star, sino que también lo obligó a crecer como líder en medio de la adversidad. Si los Pistons logran rodearlo de talento y estabilidad, esta campaña podría verse en retrospectiva como el año en que Cade Cunningham se templó en el fuego.</p>
+
+ </p>
+  
+
+      <h2>Temporada de los pistons 2024-2025</h2>
+           <p>Los Detroit Pistons vivieron una temporada 2024–2025 de resurgimiento, terminando con récord positivo (44-38) y clasificando a los playoffs como sextos del Este. Bajo el mando del nuevo entrenador J.B. Bickerstaff y con Cade Cunningham como líder absoluto, el equipo dejó atrás el desastre del año anterior (14-68) y mostró una identidad renovada. Con un núcleo joven y dinámico, los Pistons sorprendieron con una racha de 7 victorias consecutivas a inicios de temporada, incluyendo triunfos ante equipos de élite como Boston y Dallas. Su ofensiva se volvió más fluida, con Cunningham promediando más de 26 puntos y 9 asistencias, mientras que jugadores como Jalen Duren y Ausar Thompson aportaron energía y defensa. A pesar de su progreso, cayeron en primera ronda de playoffs ante los Knicks (2-4), pero compitieron con intensidad y dejaron claro que el futuro es prometedor. Fue una campaña de transición, marcada por el cambio de cultura, el desarrollo de talento joven y el regreso de la esperanza a Detroit. Personalmente opino que sus playoffs culminaron de una forma tan polimica producto de una falta no cobrada sobre Tim Hardaway Jr, el cual solo tenia que encestar dos de sus tres tiros libres para llevar la serie a un juego siente, considerando que este es un "anotador a tres niveles" y "especialista en triples" de haber sido cobrada esa falta la serie pudo ser diferente.
+</p>
+
+<h2>Cade Cunningham 2024-2025</h2>
+      <p>Cade Cunningham brilló en la temporada 2024–2025 con los Detroit Pistons. Promedió 26.1 puntos, 9.1 asistencias y 6.1 rebotes por partido, consolidándose como uno de los mejores bases jóvenes de la liga. Fue seleccionado por primera vez al Juego de Estrellas, reflejo de su impacto ofensivo y liderazgo. Su eficiencia mejoró notablemente, con 46.9% en tiros de campo y 35.6% en triples. En abril y mayo, lideró a Detroit en una serie competitiva contra los Knicks, registrando múltiples partidos con doble-doble. Su visión de juego y capacidad para anotar lo colocan en la conversación junto a figuras como Luka Dončić. Cade también mostró avances defensivos, con 1.0 robos y 0.8 bloqueos por juego. Su madurez como armador fue clave para el desarrollo del equipo. Esta temporada marcó su salto definitivo como estrella de la NBA. </p>
+
+ 
+      <h2>El futuro de Los Pistons y Cade</h2>
+      <p>El futuro de los Detroit Pistons luce prometedor gracias al crecimiento de Cade Cunningham y el desarrollo de un núcleo joven lleno de talento. Tras años de reconstrucción, el equipo finalmente muestra señales de estabilidad y ambición. Cade Cunningham, quien firmó una extensión máxima hasta 2030, ha evolucionado como un verdadero armador estrella: pasó de ser un prospecto con potencial a un jugador que promedia más de 26 puntos y 9 asistencias por partido, liderando ofensivas con madurez, visión y eficiencia. Su triple-doble de 46 puntos ante Washington fue una declaración de liderazgo y capacidad para dominar partidos.
+El núcleo joven que lo rodea incluye a Jalen Duren, un pívot atlético y dominante en la pintura; Ausar Thompson, un alero versátil con impacto defensivo; Jaden Ivey, un escolta explosivo con capacidad de anotación; y Marcus Sasser, un base suplente con gran energía y tiro exterior. A ellos se suma Tobias Harris como veterano estabilizador. Bajo el mando de J.B. Bickerstaff, los Pistons han encontrado identidad y química, logrando una racha de victorias que los llevó a playoffs en 2025. Si este grupo mantiene su progresión y se refuerza con piezas estratégicas, Detroit podría convertirse en un contendiente serio en el Este en los próximos años.
+<p>
+        <p>Aunque no lo parezca Devin Booker cuenta con 29 años de edad y 10 años en la liga aun que no es considerado un jugador "viejo" estadisticamente se supone que estos sean los mejores años de su carrera y si los gasta en una organizacion que no le brinde un poryecto serio, Probablente veamos otro caso Damian Lillard</p>
+
+       
+
+  <div class="comment-section">
+  <h2>Comentarios</h2>
+  <form class="comment-form" id="commentForm">
+    <input type="text" id="name" placeholder="Tu nombre" required>
+    <textarea id="message" placeholder="Escribe tu comentario aquí..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <div class="comment-list" id="commentList"></div>
+</div>
+
+<style>
+.comment-list {
+  margin-top: 30px;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.comment {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+.comment strong {
+  color: #ff3333;
+}
+
+.comment p {
+  margin: 5px 0 0;
+  color: #ddd;
+}
+</style>
+
+<script>
+const form = document.getElementById('commentForm');
+const commentList = document.getElementById('commentList');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (name && message) {
+    const comment = document.createElement('div');
+    comment.classList.add('comment');
+    comment.innerHTML = `<strong>${name}</strong><p>${message}</p>`;
+    commentList.prepend(comment);
+    form.reset();
+  }
+});
+</script>

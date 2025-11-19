@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sports Blog</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1e2a38, #ffffff);
+      color: #f0f0f0;
+    }
+
+    header {
+      background-color: #0d1b2a;
+      color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff3333;
+    }
+
+    .hero {
+  background-image: url('Inside the locker room_page-0001.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Fade inferior usando máscara */
+  -webkit-mask-image: linear-gradient(to top, transparent 0%, black 100%);
+  mask-image: linear-gradient(to top, transparent 0%, black 20%);
+}
+    .hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  background: linear-gradient(to top, rgb(0, 0, 0), transparent);
+  pointer-events: none;
+  z-index: 1;
+}
+
+    .hero-text {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    }
+
+    .hero-text h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border: 2px solid #ffffff;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #ff3333;
+      border-color: #ff3333;
+    }
+
+    .latest-news {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .latest-news h3 {
+      font-size: 28px;
+      margin-bottom: 40px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .news-grid {
+      display: flex;
+      gap: 25px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .news-grid article {
+      width: 300px;
+      background-color: #2a2a2a;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .news-grid article:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .news-grid img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-bottom: none;
+    }
+
+    .news-grid h4 {
+      margin: 15px;
+      font-size: 18px;
+      color: #f0f0f0;
+    }
+    .intro-text {
+  max-width: 900px;
+  margin: 80px auto 60px;
+  padding: 0 20px;
+  text-align: center;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.intro-text h1 {
+  font-size: 42px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.intro-text .subtitle {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 50px;
+  font-style: italic;
+}
+
+.intro-text .category {
+  margin-bottom: 40px;
+}
+
+.intro-text .category h2 {
+  font-size: 26px;
+  color: #ffa500;
+  margin-bottom: 10px;
+}
+
+.intro-text .category p {
+  font-size: 17px;
+  color: #ffffff;
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1> BLOG DE DEPORTES</h1>
+    <nav>
+      <ul>
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Sobre_mi.html">Sobre mí</a></li>
+        <li><a href="Articulos.html">Artículos</a></li>
+      
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+  
+  
+    </div>
+  </section>
+ <section class="intro-text">
+  <h1>Tipos de Articulos</h1>
+  <p class="subtitle">
+
+  <div class="category">
+    <h2>NBA Media</h2>
+    <h1>Traspasos, partidos, rumores y análisis. Todo lo que necesitas saber sobre la actualidad de la liga.</h1>
+  </div>
+
+  <div class="category">
+    <h2>Conociendo Deportistas</h2>
+    <h1>Exploramos el lado humano de las estrellas: sus orígenes, pasiones, luchas y momentos fuera de la cancha.</h1>
+  </div>
+
+  <div class="category">
+    <h2>Conociendo a Estrellas</h2>
+    <h1>Historias de jugadores legendarios y actuales que han marcado el juego con su talento y legado.</h1>
+  </div>
+</section>
+
+  <section class="latest-news">
+    <h3>Últimas Noticias</h3>
+    <div class="news-grid">
+      <article>
+        <img src="kobe imagen.png" alt="Soccer players" />
+        <h4>El deporte no se define solo por la cinta médica</h4>
+      </article>
+      <article>
+        <img src="rookies.png" alt="Woman exercising" />
+        <h4>La importancia del ejercicio para mantener el cuerpo sano</h4>
+      </article>
+      <article>
+        <img src="ChatGPT Image 6 nov 2025, 06_13_21 p.m..png" alt="Boxing match" />
+        <h4>Cuando un jugador bloquea el flujo de su juego</h4>
+      </article>
+    </div>
+  </section>
+</body>
+</html>

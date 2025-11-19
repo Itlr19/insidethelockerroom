@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrenamiento de Alto Rendimiento</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #ffffff 10%, #ffa500 50%, #ff4500 100%);
+      color: #2c3e50;
+    }
+
+    .back-arrow {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 32px;
+      color: white;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 8px 12px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+    }
+
+    .back-arrow:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .header-wrapper {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      filter: brightness(0.95);
+    }
+
+    .header-wrapper::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background: linear-gradient(to top, rgba(255, 255, 255, 0.95), transparent);
+      pointer-events: none;
+    }
+
+    .article-container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      color: #1a1a1a;
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: #ff4d6d;
+      font-size: 26px;
+      margin-bottom: 15px;
+      border-left: 5px solid #ff4d6d;
+      padding-left: 10px;
+    }
+
+    .section p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 720px;
+      height: 420px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.02);
+    }
+    .comment-section {
+  max-width: 800px;
+  margin: 60px auto 40px;
+  padding: 30px;
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.comment-section h2 {
+  font-size: 26px;
+  color: #ff3333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.comment-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.comment-form button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #cc0000;
+}
+  </style>
+</head>
+<body>
+
+
+
+  <a href="Articulos.html" class="back-arrow" title="Volver">&#8592;</a>
+
+  <div class="header-wrapper">
+    <img src="dbook.png" alt="Imagen destacada" class="header-image">
+  </div>
+
+  <div class="article-container">
+    <h1>Entrenamiento de Alto Rendimiento</h1>
+
+    <div class="section">
+      <h2>¿Quién es Devin Booker?</h2>
+      <p>Devin Booker es escolta de los Phoenix Suns, conocido por su talento anotador y liderazgo. Fue elegido en el Draft 2015 y ha sido 4 veces All-Star, 2 veces All-NBA, campeón olímpico en Tokio 2020 y protagonista de una histórica actuación de 70 puntos en 2017. En 2021 llevó a los Suns a las Finales de la NBA y en 2025 se convirtió en el máximo anotador en la historia del equipo.</p>
+    </div>
+
+    <div class="section">
+      <h2>Estilo de juego</h2>
+      <p>Devin Booker es un escolta técnico, eficiente y letal. Su estilo se basa en el dominio del tiro de media distancia, el control del ritmo ofensivo y su capacidad para anotar desde cualquier zona de la cancha. No necesita ser explosivo físicamente para generar ventajas: utiliza cambios de velocidad, ángulos y lectura del juego para crear sus propios tiros o asistir a sus compañeros.
+Es un jugador que se mueve muy bien sin balón, aprovechando pantallas y espacios para recibir en posición de tiro. Además, es confiable en momentos decisivos, con una mentalidad fría y efectiva en el clutch. Aunque no es un base natural, puede asumir la creación ofensiva cuando el equipo lo necesita, mostrando visión y toma de decisiones inteligentes.
+Booker representa una mezcla de fundamentos clásicos con mentalidad moderna: anota con elegancia, piensa el juego y responde bajo presión.
+</p>
+    </div>
+
+    <div class="video-container">
+      <iframe src="Devin Booker's Mid-range Jumper is DEADLY ! 💀 - NBArtv (1080p, h264).mp4" allowfullscreen></iframe>
+    </div>
+
+    <div class="section">
+      <h2>Situacion con los Phoenix Suns</h2>
+      <p>Devin Booker es un super anotador con un talento absurdo, sin embargo, el equipo de los Phoenix Suns se encuentran en una situcion delicada y aun mas comprometedora para su estrella Devin Booker, desde la partida de piezas importantes del nucleo campeon del oeste de 2021 ( Chris Paul, Mikal Bridges, DeAndre Ayton y Cam johnson) el equipo se ha visto sin rumbo, sin identidad  y mal extructurado.</p>
+
+      <h2>Primer Argumento</h2>
+      <p>El traspaso que trajo a Kevin Durant a cambio de Mikal Bridges, Cam Johnson, Jae Crowder, 4 primeras rondas del draft y 1 intercambio de picks en 2028 (pick swap) a primera vista parecia ser un gran paso a delante para el equipo a pesar de perder grandes jugadores de rol, sin embargo la falta de quimica, lesiones, falta de profundidad en el banquillo y decepcionantes resultados en playoffs acabo lentamente con el proyecto, todo esto desencadenando en el traspaso por Bradly Beal, que acabo en una parcial desmantelacion del roster
+
+ </p>
+      <div class="image-container">
+        <img src="d book stats.png" alt="Estadísticas de LaMelo Ball">
+      </div>
+
+      <h2>Segundo Argumento</h2>
+      <p>Como se puede apreciar en esta imagen, los numeros de Booker no han bajado, de hecho, a aumentado su produccion en todos los sentidos desde la temporada de 2021 en la que llego a finales, esto es una muestra evidente de que Devin Booker sigue evolucionando como jugador pero debido a al limbo en el que se encuentran los suns y la insertidumbre con la que afrontan esta temporada, considero que el "Sol de Phoenix" deberia considerar su estancia en el equipo.</p>
+
+      <h2>¿Por que abandonar Phoenix?</h2>
+      <p>-Edad</p>
+        Aunque no lo parezca Devin Booker cuenta con 29 años de edad y 10 años en la liga aun que no es considerado un jugador "viejo" estadisticamente se supone que estos sean los mejores años de su carrera y si los gasta en una organizacion que no le brinde un poryecto serio, Probablente veamos otro caso Damian Lillard
+
+        <p>-Estado de los Phoenix Suns</p>
+
+        <div class="image-container">
+        <img src="devin roster 1.png" alt="Estadísticas de LaMelo Ball">
+        <img src="devin roster 2.png" alt="Estadísticas de LaMelo Ball">
+
+        <p>Este, es el roster actual de Phoenix para esta temporada, ademas de piezas interesantes como Grayson Allen, Jaylen Green o nuestro compatriota Dominicano Koby Brea, este equipo esta mas cerca a una recontruccion que un proyecto serio con aspiraciones reales de siquiera competir en playoffs en el oeste. Para Devin Booker el momento de ganar es ahora y al parecer el proyecto de los Suns esta tomando otro camino.</p>
+        </div>
+
+      </p>
+
+      <p>Devin Booker en definitiva es un super escolta y debatiblemente el mejor de toda la liga, sin embargo esta estancando su carrera en una organizacion que desafortunadamente no ha podido brindarle un proyecto competitivo estable. con relacion a las espectativas puestas en la noche del Draft del 2015, Devin Booker innegablemente rompio las espectativas y aunque sabemos que "teoricamente" nisiquiera deberia estar envuelto en estas conversaciones, entendiendo su talento y lo especial que es como jugador, personalmente, opino que en este punto de su carrera merece comprtir playoffs ya sea en esta franquicia o en otra. Shout out to Devin Booker. </p>
+
+    <div class="video-container">
+      <iframe src="NBA Legends on why Devin Booker is UNGUARDABLE (Kobe, LeBron, Wade..) - Piotrekz Productions (1080p, h264).mp4" allowfullscreen></iframe>
+    </div>
+  </div>
+<div class="comment-section">
+  <h2>Comentarios</h2>
+  <form class="comment-form" id="commentForm">
+    <input type="text" id="name" placeholder="Tu nombre" required>
+    <textarea id="message" placeholder="Escribe tu comentario aquí..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <div class="comment-list" id="commentList"></div>
+</div>
+
+<style>
+.comment-list {
+  margin-top: 30px;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.comment {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+.comment strong {
+  color: #ff3333;
+}
+
+.comment p {
+  margin: 5px 0 0;
+  color: #ddd;
+}
+</style>
+
+<script>
+const form = document.getElementById('commentForm');
+const commentList = document.getElementById('commentList');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (name && message) {
+    const comment = document.createElement('div');
+    comment.classList.add('comment');
+    comment.innerHTML = `<strong>${name}</strong><p>${message}</p>`;
+    commentList.prepend(comment);
+    form.reset();
+  }
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Entrenamiento de Alto Rendimiento</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(180deg, #ffffff 10%, #f2ff00 50%, #d9dc05 100%);
+      color: #2c3e50;
+    }
+
+    .back-arrow {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 32px;
+      color: white;
+      text-decoration: none;
+      background-color: rgba(0, 0, 0, 0.4);
+      padding: 8px 12px;
+      border-radius: 50%;
+      transition: background-color 0.3s ease;
+      z-index: 10;
+    }
+
+    .back-arrow:hover {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .header-wrapper {
+      position: relative;
+      width: 100%;
+      height: 500px;
+      overflow: hidden;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .header-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      filter: brightness(0.95);
+    }
+
+    .header-wrapper::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 120px;
+      background: linear-gradient(to top, rgba(255,255,255,0.95), transparent);
+      pointer-events: none;
+    }
+
+    .article-container {
+      max-width: 960px;
+      margin: 40px auto;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      backdrop-filter: blur(6px);
+    }
+
+    h1 {
+      color: #1a1a1a;
+      font-size: 36px;
+      margin-bottom: 30px;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: #ff4d6d;
+      font-size: 26px;
+      margin-bottom: 15px;
+      border-left: 5px solid #ff4d6d;
+      padding-left: 10px;
+    }
+
+    .section p {
+      font-size: 18px;
+      color: #333;
+      line-height: 1.8;
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      margin: 30px 0;
+      text-align: center;
+    }
+
+    iframe {
+      width: 100%;
+      max-width: 720px;
+      height: 420px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.02);
+    }
+        .comment-section {
+  max-width: 800px;
+  margin: 60px auto 40px;
+  padding: 30px;
+  background-color: #1c1c1c;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+.comment-section h2 {
+  font-size: 26px;
+  color: #ff3333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.comment-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.comment-form input,
+.comment-form textarea {
+  padding: 12px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.comment-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.comment-form button {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background-color: #ff3333;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+  background-color: #cc0000;
+}
+  </style>
+</head>
+<body>
+
+  <a href="Articulos.html" class="back-arrow" title="Volver">&#8592;</a>
+
+  <div class="header-wrapper">
+    <img src="descarga.jfif" alt="Imagen destacada" class="header-image">
+  </div>
+
+  <div class="article-container">
+    <h1>Conociendo Estrellas</h1>
+
+    <div class="section">
+      <h2>¿Que significa ser un campeon?</h2>
+      <p>“Todo el mundo quiere ser campeón… hasta que es hora de hacer lo que se necesita para ser campeón.”
+— Allen Iverson, en su carta a Kobe Bryant
+
+En esa frase, Iverson no solo elogia a Kobe, sino que desnuda una verdad incómoda del deporte profesional: el deseo de gloria es común, pero el sacrificio que exige es lo que separa a los grandes de los legendarios. Kobe Bryant no fue simplemente talentoso; fue obsesivo, metódico, incansable. Mientras otros dormían, él entrenaba. Mientras otros se conformaban, él buscaba perfección.
+Iverson lo vivió en carne propia. Lo enfrentó en las Finales, lo estudió como rival, y lo admiró como competidor. En su carta, reconoce que Kobe no solo quería ganar, sino que estaba dispuesto a pagar el precio completo — físico, mental y emocional — para hacerlo.
+Esa línea resume lo que muchos jugadores no entienden hasta que es demasiado tarde: el campeonato no se alcanza con deseo, sino con disciplina. Y Kobe, como dijo Iverson, se separó del resto porque nunca dudó en hacer lo necesario
+
+<p>Kobe Bryant no solo fue uno de los jugadores más talentosos de la historia de la NBA, sino también uno de los más obsesionados con la grandeza. Su hambre por ser el mejor era tan intensa que incluso otras leyendas lo reconocían como un competidor distinto, casi inhumano.</p>
+
+<p>🗣️ Kevin Garnett, conocido por su intensidad, dijo una vez:</p>
+
+“Kobe era diferente. No solo quería ganarte, quería destruirte. Vivía para eso.”Garnett, que compartió batallas épicas con Kobe, siempre destacó que su mentalidad era de guerra total, cada noche, cada jugada.
+
+<p>🗣️ Michael Jordan, el ídolo de Kobe, lo describió así:</p>
+
+“Él quería ser el mejor. Y no solo lo decía, lo vivía. Me llamaba a las 3 de la mañana para hablar de movimientos, de cómo mejorar.”Jordan reconoció que Kobe era el único que se le acercaba en obsesión, en disciplina, en deseo de dominar.
+
+<p>🗣️ Tracy McGrady, amigo cercano y rival, reveló:</p>
+
+“Desde joven, Kobe me decía que quería morir siendo el mejor jugador de todos los tiempos.”McGrady contó que Kobe no solo hablaba de grandeza, sino que la perseguía con una rutina brutal: entrenamientos antes del amanecer, estudio constante del juego, y una ética que intimidaba incluso a los más preparados.
+
+Kobe no era simplemente competitivo. Era devoto a la excelencia. Su hambre de grandeza no se apagaba con trofeos ni elogios. Siempre quería más. Más victorias, más perfección, más legado. Y por eso, incluso entre los grandes, Kobe se convirtió en un símbolo de lo que significa vivir para el juego.
+
+</p>.
+</p>
+    </div>
+
+    <div class="section">
+      <h2>Por que tanto esfuerzo?</h2>
+      <p>Por amor, Kobe Bryant expresó muchas veces por qué amaba tanto el baloncesto. Una de sus declaraciones más sentidas está en su poema “Dear Basketball”, donde escribió:
+“Amé tanto el juego que le di mi todo, desde mi mente y cuerpo hasta mi espíritu y alma.”
+
+Esta frase resume su devoción absoluta. Para Kobe, el baloncesto no era solo un deporte, era una vocación, una forma de vida. En entrevistas también dijo:
+- “El baloncesto fue mi primer amor. Me dio propósito, me dio estructura, me dio una salida para mi creatividad.”
+- “No se trata del número de horas que practicas, sino del número de horas que tu mente está presente durante la práctica.”
+Su amor por el juego estaba ligado a su obsesión por mejorar, por competir consigo mismo, por dominar cada detalle. No era solo pasión: era disciplina, arte y legado.
+
+
+</p>
+    </div>
+
+
+    <div class="section">
+      <h2>Mamba Mentality</h2>
+      <p>La Mamba Mentality es una filosofía de vida creada por Kobe Bryant que representa el compromiso absoluto con la mejora continua, la disciplina extrema y la búsqueda incansable de la excelencia. Inspirada en su apodo “Black Mamba”, esta mentalidad va más allá del deporte: se trata de enfrentar cada desafío con pasión, concentración y valentía, sin excusas ni conformismo. Para Kobe, significaba levantarse cada día con el objetivo de ser mejor que ayer, perfeccionar cada detalle y superar los límites personales.
+</p>
+      <p> <p>La rotura del tendón de Aquiles (2013)</p> En un partido contra los Warriors, Kobe cayó al suelo tras una jugada y supo de inmediato que algo grave había pasado. Se había roto el tendón de Aquiles. Aun así, se levantó, caminó cojeando hasta la línea de tiros libres y encestó ambos lanzamientos antes de salir de la cancha. Fue un acto de pura determinación y respeto por el juego.
+<p> La dislocación del dedo (2009)</p> Durante un partido, se dislocó el dedo anular derecho. En lugar de salir, fue al banquillo, donde el entrenador Gary Vitti se lo reacomodó en segundos. Kobe volvió a la cancha como si nada hubiera pasado. Más tarde dijo: “No hay excusas. Si puedo moverme, puedo jugar.”
+<p> Su partido de 81 puntos (2006)</p> Contra los Raptors, Kobe anotó la segunda mayor cantidad de puntos en un solo juego en la historia de la NBA. Fue una exhibición de dominio ofensivo, concentración y voluntad pura. Ese juego consolidó su estatus como uno de los anotadores más letales de todos los tiempos.
+<p> El entrenamiento a las 4 a.m. en los Juegos Olímpicos (2008)</p> Durante los Juegos de Beijing, mientras sus compañeros dormían, Kobe ya estaba entrenando en el gimnasio a las 4 de la mañana. Su ética de trabajo inspiró a todo el equipo USA, incluyendo a jugadores como LeBron James y Dwyane Wade, quienes comenzaron a imitar su rutina.
+<p>Su último partido: 60 puntos a los 37 años (2016)</p> En su despedida, Kobe no solo jugó, sino que dio un espectáculo inolvidable. Anotó 60 puntos contra Utah, liderando una remontada épica. Fue la despedida perfecta: una última muestra de su fuego competitivo y su amor por el baloncesto.
+Estos momentos no solo definieron su carrera, sino que lo convirtieron en un símbol
+</p>
+
+      <h2>Como inspira a los demas su legado</h2>
+      <p>
+
+<p>>Devin Booker vivió uno de los momentos más simbólicos de su carrera cuando Kobe Bryant le escribió “Be Legendary” en sus zapatillas tras un partido. Ese mensaje se convirtió en su mantra personal. Desde entonces, Booker ha trabajado incansablemente para honrar esa frase, perfeccionando su técnica, su mentalidad ofensiva y su liderazgo en Phoenix. En cada partido, su enfoque refleja la obsesión por la mejora continua que Kobe predicaba.</p>
+      <p>Jayson Tatum tuvo la oportunidad de entrenar con Kobe en 2018, una experiencia que él mismo describe como transformadora. Aprendió directamente de su ídolo sobre el detalle, la disciplina y la mentalidad de asesino en la cancha. Tatum ha dicho que intenta emular la forma en que Kobe se preparaba para cada juego, y en los momentos de presión, canaliza esa energía. Su homenaje en los Juegos Olímpicos usando el número 10 fue una muestra clara de cuánto lo marcó.</p>
+      <p>Giannis Antetokounmpo, el “Greek Freak”, recibió un reto directo de Kobe: “Sé MVP”. Para Giannis, ese mensaje fue más que una motivación; fue una validación. Lo tomó como una misión personal y trabajó con una intensidad brutal hasta lograrlo. Cuando ganó el MVP, lo dedicó a Kobe, reconociendo que su legado lo empujó a alcanzar niveles que ni él mismo imaginaba. Kobe no solo lo inspiró, lo desafió a ser grande.</p>
+
+
+
+
+ </p>
+  
+
+      <h2>Temporada de los pistons 2024-2025</h2>
+           <p>Los Detroit Pistons vivieron una temporada 2024–2025 de resurgimiento, terminando con récord positivo (44-38) y clasificando a los playoffs como sextos del Este. Bajo el mando del nuevo entrenador J.B. Bickerstaff y con Cade Cunningham como líder absoluto, el equipo dejó atrás el desastre del año anterior (14-68) y mostró una identidad renovada. Con un núcleo joven y dinámico, los Pistons sorprendieron con una racha de 7 victorias consecutivas a inicios de temporada, incluyendo triunfos ante equipos de élite como Boston y Dallas. Su ofensiva se volvió más fluida, con Cunningham promediando más de 26 puntos y 9 asistencias, mientras que jugadores como Jalen Duren y Ausar Thompson aportaron energía y defensa. A pesar de su progreso, cayeron en primera ronda de playoffs ante los Knicks (2-4), pero compitieron con intensidad y dejaron claro que el futuro es prometedor. Fue una campaña de transición, marcada por el cambio de cultura, el desarrollo de talento joven y el regreso de la esperanza a Detroit. Personalmente opino que sus playoffs culminaron de una forma tan polimica producto de una falta no cobrada sobre Tim Hardaway Jr, el cual solo tenia que encestar dos de sus tres tiros libres para llevar la serie a un juego siente, considerando que este es un "anotador a tres niveles" y "especialista en triples" de haber sido cobrada esa falta la serie pudo ser diferente.
+</p>
+
+<h2>Cade Cunningham 2024-2025</h2>
+      <p>Cade Cunningham brilló en la temporada 2024–2025 con los Detroit Pistons. Promedió 26.1 puntos, 9.1 asistencias y 6.1 rebotes por partido, consolidándose como uno de los mejores bases jóvenes de la liga. Fue seleccionado por primera vez al Juego de Estrellas, reflejo de su impacto ofensivo y liderazgo. Su eficiencia mejoró notablemente, con 46.9% en tiros de campo y 35.6% en triples. En abril y mayo, lideró a Detroit en una serie competitiva contra los Knicks, registrando múltiples partidos con doble-doble. Su visión de juego y capacidad para anotar lo colocan en la conversación junto a figuras como Luka Dončić. Cade también mostró avances defensivos, con 1.0 robos y 0.8 bloqueos por juego. Su madurez como armador fue clave para el desarrollo del equipo. Esta temporada marcó su salto definitivo como estrella de la NBA. </p>
+
+ 
+      <h2>El futuro de Los Pistons y Cade</h2>
+      <p>El futuro de los Detroit Pistons luce prometedor gracias al crecimiento de Cade Cunningham y el desarrollo de un núcleo joven lleno de talento. Tras años de reconstrucción, el equipo finalmente muestra señales de estabilidad y ambición. Cade Cunningham, quien firmó una extensión máxima hasta 2030, ha evolucionado como un verdadero armador estrella: pasó de ser un prospecto con potencial a un jugador que promedia más de 26 puntos y 9 asistencias por partido, liderando ofensivas con madurez, visión y eficiencia. Su triple-doble de 46 puntos ante Washington fue una declaración de liderazgo y capacidad para dominar partidos.
+El núcleo joven que lo rodea incluye a Jalen Duren, un pívot atlético y dominante en la pintura; Ausar Thompson, un alero versátil con impacto defensivo; Jaden Ivey, un escolta explosivo con capacidad de anotación; y Marcus Sasser, un base suplente con gran energía y tiro exterior. A ellos se suma Tobias Harris como veterano estabilizador. Bajo el mando de J.B. Bickerstaff, los Pistons han encontrado identidad y química, logrando una racha de victorias que los llevó a playoffs en 2025. Si este grupo mantiene su progresión y se refuerza con piezas estratégicas, Detroit podría convertirse en un contendiente serio en el Este en los próximos años.
+<p>
+        <p>Aunque no lo parezca Devin Booker cuenta con 29 años de edad y 10 años en la liga aun que no es considerado un jugador "viejo" estadisticamente se supone que estos sean los mejores años de su carrera y si los gasta en una organizacion que no le brinde un poryecto serio, Probablente veamos otro caso Damian Lillard</p>
+
+       
+
+  <div class="comment-section">
+  <h2>Comentarios</h2>
+  <form class="comment-form" id="commentForm">
+    <input type="text" id="name" placeholder="Tu nombre" required>
+    <textarea id="message" placeholder="Escribe tu comentario aquí..." required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+  <div class="comment-list" id="commentList"></div>
+</div>
+
+<style>
+.comment-list {
+  margin-top: 30px;
+  background-color: #2a2a2a;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.comment {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #444;
+  padding-bottom: 10px;
+}
+
+.comment strong {
+  color: #ff3333;
+}
+
+.comment p {
+  margin: 5px 0 0;
+  color: #ddd;
+}
+</style>
+
+<script>
+const form = document.getElementById('commentForm');
+const commentList = document.getElementById('commentList');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if (name && message) {
+    const comment = document.createElement('div');
+    comment.classList.add('comment');
+    comment.innerHTML = `<strong>${name}</strong><p>${message}</p>`;
+    commentList.prepend(comment);
+    form.reset();
+  }
+});
+</script>
