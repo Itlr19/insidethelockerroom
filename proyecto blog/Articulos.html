@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Deportivo</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to right, #1e2a38, #2f3e4d);
+      margin: 0;
+      padding: 20px;
+      color: #f0f0f0;
+    }
+    
+    header {
+      background-color: #0d1b2a;
+      color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 32px;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin: 0;
+      padding: 0;
+    }
+    
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 40px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 36px;
+    }
+
+    .top-nav {
+            background-color: #0d1b2a;
+      color: #ffffff;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .top-nav a {
+     color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: color 0.3s ease;
+    }
+
+
+    .top-nav a:hover {
+      color: #ff3333;
+    }
+
+    .blog-container {
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .blog-card {
+      display: flex;
+      background-color: #1c1c1c;
+      border-left: 6px solid #ff3333;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .thumbnail {
+      width: 220px;
+      height: 150px;
+      object-fit: cover;
+      border: none;
+    }
+
+    .blog-content {
+      padding: 20px;
+      flex: 1;
+      background-color: #2a2a2a;
+    }
+
+    .blog-title {
+      font-size: 24px;
+      font-weight: bold;
+      color: #ffffff;
+      margin-bottom: 12px;
+    }
+
+    .blog-summary {
+      font-size: 16px;
+      color: #cccccc;
+      margin-bottom: 15px;
+    }
+
+    .blog-content a {
+      display: inline-block;
+      padding: 8px 16px;
+      background-color: #ff3333;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .blog-content a:hover {
+      background-color: #cc0000;
+    }
+  </style>
+</head>
+<body>
+
+   <header>
+    <h1> BLOG DE DEPORTES</h1>
+    <nav>
+      <ul>
+       
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Sobre_mi.html">Sobre mí</a></li>
+        <li><a href="Articulos.html">Artículos</a></li>
+        >
+        
+      </ul>
+    </nav>
+  </header>
+
+  <h1>Articulos</h1>
+
+  <div class="blog-container">
+
+    <div class="blog-card">
+      <img src="kobe imagen.png" alt="Miniatura 1" class="thumbnail">
+      <div class="blog-content">
+        <div class="blog-title">Conociendo al Deportista</div>
+        <div class="blog-summary">El mas Grande de la Historia.</div>
+        <a href="kobe brayant.html">Leer más</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="rookies.png" alt="Miniatura 2" class="thumbnail">
+      <div class="blog-content">
+        <div class="blog-title">Nba Media</div>
+        <div class="blog-summary">La Carrera del Rookie of the year esta bastante reñida!!!¿Quien sera el ganador?</div>
+        <a href="lamelo ball.html">Comming soon</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="ChatGPT Image 6 nov 2025, 06_13_21 p.m..png" alt="Miniatura 3" class="thumbnail">
+      <div class="blog-content">
+        <div class="blog-title">Conociendo Estrellas</div>
+        <div class="blog-summary">Luka, Curry, Shai... ¿Puede LaMelo Ball entrar en esa conversación?</div>
+        <a href="lamelo ball.html">Leer más</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="booker.png" alt="Miniatura 4" class="thumbnail">
+      <div class="blog-content">
+        <div class="blog-title">Conociendo Estrellas</div>
+        <div class="blog-summary">Devin Booker, el super comboguard de los Phoenix Suns.</div>
+        <a href="devin booker.html">Leer más</a>
+      </div>
+    </div>
+
+    <div class="blog-card">
+      <img src="cade.png" alt="Miniatura 5" class="thumbnail">
+      <div class="blog-content">
+        <div class="blog-title">Conociendo Estrellas</div>
+        <div class="blog-summary">Cade Cunningham, el base más sólido de la liga.</div>
+        <a href="cade cunninhgam.html">Leer más</a>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
